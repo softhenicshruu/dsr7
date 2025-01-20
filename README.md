@@ -60,7 +60,7 @@ You can also follow along in **Github Codespaces**, where you can run the projec
    yarn start:ui
    
 
-7. Open the UI in your browser using the provided URL to interact with the game.
+7. Open the index.html file in your browser using the provided URL to interact with the game.
 
 ### Running the Project
 
