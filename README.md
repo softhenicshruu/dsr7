@@ -1,40 +1,97 @@
-# Agoric Dapp Starter: Offer Up
+markdown
+# STO-PAP-SCI - A DeFi Game for Enhanced Staking, Transparency, and Interoperability of Skins in Gaming
 
-Offer Up is a simple Dapp for the [Agoric smart contract platform](https://docs.agoric.com/) that permits users to explore items for sale in a marketplace, displaying default options of maps, potions, and scrolls. Users can select up to three items in any combination, create an offer starting from 0.25 [IST](https://agoric.com/blog/getting-started/ist), and upon transaction confirmation, receive the chosen items in their wallet while the offered amount is deducted from their balance.
+**STO-PAP-SCI** is a decentralized finance (DeFi) game designed to enhance the staking, transparency, and interoperability of skins within the gaming ecosystem. This project leverages the power of blockchain technology to create a transparent and fair environment where players can stake, trade, and manage skins in a decentralized way. The game integrates with the Agoric smart contract platform to ensure a seamless experience.
 
-<div style="display: flex; align-items: center; justify-content: center; height: 300;">
-    <img src="https://docs.agoric.com/assets/new_002_small2.DgAL2zV8.png" alt="Offer Up Dapp" style="display: block; margin: auto;">
-</div>
+## Features
+- **Improved Staking**: Stake your skins and earn rewards in a secure and transparent manner.
+- **Transparency**: All transactions are recorded on the blockchain, ensuring that everything is open and auditable.
+- **Interoperability**: Game skins can be transferred and used across various games and platforms.
 
-## Getting started
+## Getting Started
 
-Detailed instructions regarding setting up the environment with a video walkthrough is available at [Your First Agoric Dapp](https://docs.agoric.com/guides/getting-started/) tutorial. But if you have the environment set, i.e., have correct version of node, yarn, docker, and Keplr wallet installed, below are the steps that you need to follow. *You can also use the same instructions to follow along in Github Codespaces without any installation or downloads on your local machine, apart from Keplr which is needed to connect to dApp.*
-- run the `yarn install` command to install any solution dependencies. *Downloading all the required dependencies may take several minutes. The UI depends on the React framework, and the contract depends on the Agoric framework. The packages in this project also have development dependencies for testing, code formatting, and static analysis.*
-- start a local Agoric blockchain using the `yarn start:docker` command.
-- run `yarn docker:logs` to check the logs. Once your logs resemble the following, stop the logs by pressing `ctrl+c`.
-```
-demo-agd-1  | 2023-12-27T04:08:06.384Z block-manager: block 1003 begin
-demo-agd-1  | 2023-12-27T04:08:06.386Z block-manager: block 1003 commit
-demo-agd-1  | 2023-12-27T04:08:07.396Z block-manager: block 1004 begin
-demo-agd-1  | 2023-12-27T04:08:07.398Z block-manager: block 1004 commit
-demo-agd-1  | 2023-12-27T04:08:08.405Z block-manager: block 1005 begin
-demo-agd-1  | 2023-12-27T04:08:08.407Z block-manager: block 1005 commit
-```
-- **Only if you are running this in a github codespace:** go to `PORTS` in bottom-right panel, and make all listed ports `public` by selecting `Port Visibility` after right-click.
-- run `yarn start:contract` to start the smart contract. 
-- run `yarn start:ui` to start the smart contract. You can use the link in the output to load the smart contract UI in a browser.
+### Prerequisites
 
-For any troubleshooting please refer to the detailed tutorial at [Here](https://docs.agoric.com/guides/getting-started/).
+Before you can start the project, ensure that you have the following installed on your system:
+- Node.js
+- Yarn
+- Docker
+- Keplr Wallet (for blockchain interaction)
+
+You can also follow along in **Github Codespaces**, where you can run the project without having to install anything on your local machine (except for Keplr Wallet).
+
+### Setup Instructions
+
+1. Clone the repository to your local machine:
+   bash
+   git clone https://github.com/yourusername/STO-PAP-SCI.git
+   cd STO-PAP-SCI
+   
+
+2. Install the dependencies:
+   bash
+   yarn install
+   
+   *This may take a few minutes as it will install all the necessary dependencies for both the UI (React) and the smart contract (Agoric framework).*
+
+3. Start a local Agoric blockchain using Docker:
+   bash
+   yarn start:docker
+   
+
+4. Once the blockchain is running, check the logs to ensure everything is functioning:
+   bash
+   yarn docker:logs
+   
+   You should see logs similar to:
+   
+   demo-agd-1  | 2023-12-27T04:08:06.384Z block-manager: block 1003 begin
+   demo-agd-1  | 2023-12-27T04:08:06.386Z block-manager: block 1003 commit
+   demo-agd-1  | 2023-12-27T04:08:07.396Z block-manager: block 1004 begin
+   demo-agd-1  | 2023-12-27T04:08:07.398Z block-manager: block 1004 commit
+   
+
+5. Start the smart contract:
+   bash
+   yarn start:contract
+   
+
+6. Start the user interface (UI) for the game:
+   bash
+   yarn start:ui
+   
+
+7. Open the UI in your browser using the provided URL to interact with the game.
+
+### Running the Project
+
+After following the steps above,
+run the index.html file 
+ you can run the HTML file located in the main branch to access the UI and start playing the DeFi game.
 
 ## Testing
 
-To run the unit test:
-- run `yarn test` to run the unit tests
+To run the unit tests for the smart contract, use the following command:
+bash
+yarn test
 
-To run the end to end test:
-- run `yarn test:e2e --browser chrome` to run the end to end tests; you may replace `chrome` with your favorite browser name. Although `chrome` is the recommended browser to run end to end tests at this point.
+
+To run end-to-end (e2e) tests, use the following command. You can replace `chrome` with your preferred browser:
+bash
+yarn test:e2e --browser chrome
 
 
 ## Contributing
 
-See [CONTRIBUTING](./CONTRIBUTING.md) for more on contributing to this repo.
+We welcome contributions to this project! To get started, please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file for guidelines on how to contribute to this repository.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+## Support
+
+For support and troubleshooting, refer to the detailed instructions and resources in the [Agoric Documentation](https://docs.agoric.com/guides/getting-started/).
+
+
+This updated README.md file introduces your *STO-PAP-SCI* DeFi game and provides detailed instructions for running and interacting with the project. Let me know if you'd like any further changes!
