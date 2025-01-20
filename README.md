@@ -1,4 +1,3 @@
-markdown
 # STO-PAP-SCI - A DeFi Game for Enhanced Staking, Transparency, and Interoperability of Skins in Gaming
 
 **STO-PAP-SCI** is a decentralized finance (DeFi) game designed to enhance the staking, transparency, and interoperability of skins within the gaming ecosystem. This project leverages the power of blockchain technology to create a transparent and fair environment where players can stake, trade, and manage skins in a decentralized way. The game integrates with the Agoric smart contract platform to ensure a seamless experience.
