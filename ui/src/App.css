@@ -1,0 +1,170 @@
+/* Global Styles */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f5f5f5; /* Whitesmoke background */
+  color: #4a4a4a; /* Warm dark gray text */
+  min-height: 100vh;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Connect Wallet Button */
+.connect-wallet {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #fa8072; /* Warm salmon */
+  color:black;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 300ms;
+}
+.connect-wallet:hover {
+  background-color: #e57373; /* Slightly darker salmon */
+}
+
+/* Logo Styles */
+.logo {
+  height: 4em;
+  margin: 1rem auto;
+  transition: filter 300ms;
+}
+
+/* Animations */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 15s linear;
+  }
+}
+
+/* Card Style */
+.card {
+  width: 100%;
+  padding: 2em;
+  margin: 1em;
+  background-color: #ffe4e1; /* Light warm tone */
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.read-the-docs {
+  color: #a0522d; /* Warm brown */
+}
+
+/* Trade Section */
+.trade {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 1.5rem;
+  width: 90%;
+  /* max-width: 800px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-col {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  padding: 0 15px;
+  margin: 10px;
+}
+
+/* Items in Square Brackets */
+.item-col::before {
+  content: '[';
+  font-size: 1.5rem;
+  color: #fa8072;
+}
+.item-col::after {
+  content: ']';
+  font-size: 1.5rem;
+  color: #fa8072;
+}
+
+.row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Input Fields */
+input {
+  border: none;
+  background: #050301; /* Warm beige */
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  width: 100px;
+  margin: 5px;
+}
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #fa8072;
+}
+
+/* Error Message */
+.error {
+  background-color: #e57373;
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+/* Always visible increment/decrement arrows */
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+/* Light Mode Adjustments */
+@media (prefers-color-scheme: light) {
+  .trade {
+    background: #ffebcd;
+    border: 1px solid #ffe4e1;
+  }
+  input {
+    background: #ffe4e1;
+  }
+}
+
+/* General rule for all images */
+img {
+  width: 4em; /* Adjust this value for your preferred size */
+  height: 4em; /* Ensures all images are square */
+  object-fit: cover; /* Ensures the image fits within the defined size */
+  border-radius: 5px; /* Optional: Adds slight rounding to corners */
+}
+
+/* Example for specific class */
+.logo,
+.piece,
+.coin {
+  width: 4em; /* Uniform width */
+  height: 4em; /* Uniform height */
+  object-fit: cover; /* Maintain aspect ratio within defined size */
+  border-radius: 10%; /* Optional for styling */
+}
