@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stone Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="nav">
+    <button id="marketplace-btn"><a href="http://localhost:5173/">Marketplace<a></button>
+    <button id="profile-btn">Profile</button>
+  </div>
+  <div class="game-container">
+    <h1>Stone Paper Scissors</h1>
+    <p>Choose your move:</p>
+    <div class="choices">
+      <button class="choice-btn" data-choice="rock">
+        <img src="images.png" alt="Rock">
+      </button>
+      <button class="choice-btn" data-choice="paper">
+        <img src="paper.png" alt="Paper">
+      </button>
+      <button class="choice-btn" data-choice="scissors">
+        <img src="scissors.png" alt="Scissors">
+      </button>
+    </div>
+    <div id="result"></div>
+    <div class="card">
+    <div><input type="number" placeholder="Enter amount to stake for player 1 "></div>
+    <div><input type="number" placeholder="Enter amount to stake for player 2"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
